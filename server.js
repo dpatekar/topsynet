@@ -31,11 +31,10 @@ tcpServer.listen(config.ports.tcp);
  * TCP TLS stream
  */
 var tls = require('tls');
-var fs = require('fs');
 
 var sslOptions = {
-  key : fs.readFileSync('cert/key.pem'),
-  cert : fs.readFileSync('cert/cert.pem')
+  key : checker.certPrivate,
+  cert : checker.certPublic
 };
 
 var tlsServer = tls.createServer(sslOptions, function (stream) {
