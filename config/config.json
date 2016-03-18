@@ -1,0 +1,24 @@
+{
+  "hostname": "topsy.vernnet.hr",
+  "store": {
+    "host": "localhost",
+    "database": "topsynet",
+    "user": "topsynet_admin",
+    "password": "tT383#00495"
+  },
+  "broker": {
+    "id": "topsy",
+    "loggerLevel": "info",
+    "heartbeatInterval": 600000,
+    "persistence" : {
+      "dbPath": "db"
+    }
+  },
+  "ports": {
+    "tcp": 1883,
+    "tcptls": 8883,
+    "ws": 1884,
+    "wss": 8884,
+    "dataapi": 81
+  }
+}

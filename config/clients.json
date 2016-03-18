@@ -1,0 +1,14 @@
+[
+  {
+    "id": "n01",
+    "allowedUsers": ["drpatekar"]    
+  },
+  {
+    "id": "n02",
+    "allowedUsers": ["drpatekar"]    
+  },
+  {
+    "id": "n03",
+    "allowedUsers": ["drpatekar", "mamarkic"]    
+  } 
+]
