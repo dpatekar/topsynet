@@ -21,14 +21,14 @@ function Dataapi(opts) {
 }
 
 Dataapi.prototype.start = function () {
-  
+
 	setupApi(this);
-  
-  this._server = https.createServer({
-    key: checker.certPrivate,
-    cert: checker.certPublic
-  }, this._eapp);
-  
+
+	this._server = https.createServer({
+			key : checker.certPrivate,
+			cert : checker.certPublic
+		}, this._eapp);
+
 	this._server.listen(this._port);
 }
 
