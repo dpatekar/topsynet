@@ -32,12 +32,12 @@ tcpServer.listen(config.ports.tcp);
  */
 var tls = require('tls');
 
-var sslOptions = {
+var tlsOptions = {
   key : checker.certPrivate,
   cert : checker.certPublic
 };
 
-var tlsServer = tls.createServer(sslOptions, function (stream) {
+var tlsServer = tls.createServer(tlsOptions, function (stream) {
     aedes.handle(stream);
   });
 tlsServer.listen(config.ports.tcptls);
@@ -55,7 +55,7 @@ var wsServer = websocket.createServer({
  * Secure WS stream
  */
 var https = require('https');
-var wssServer = https.createServer(sslOptions);
+var wssServer = https.createServer(tlsOptions);
 var wss = websocket.createServer({
     server : wssServer
   }, aedes.handle);

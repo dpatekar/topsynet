@@ -4,7 +4,7 @@ var users = require("./config/users.json");
 var clients = require("./config/clients.json");
 var fs = require('fs');
 
-var topicRule = new RegExp(/^[\w\d]+(\/[\w\d]+){1,20}$/);
+var topicRule = new RegExp(/^[\w\d]+(\/[\w\d#\+]+){1,20}$/);
 var checker = {
   userTopicPermission : function (username, topic) {
     if (topicRule.test(topic)) {
