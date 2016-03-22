@@ -94,8 +94,8 @@ function setupApi(that) {
    * API topic-based functions
    */
   that._eapp.use('/:topic/*', function (req, res, next) {
-    var topic = req.params.topic;
-    topic = topic.replace("|", "/");
+    var topic = req.params.topic;    
+    topic = topic.replace(/\|/g, "/");
     if (checker.userTopicPermission(req.username, topic)) {
       var topicParts = topic.split("/");
       req.topic = topic;
