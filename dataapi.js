@@ -64,7 +64,6 @@ function setupApi(that) {
       });
     }
   });
-
   /**
    * API template
    */
@@ -89,12 +88,11 @@ function setupApi(that) {
       });
     }
   });
-
   /**
    * API topic-based functions
    */
   that._eapp.use('/:topic/*', function (req, res, next) {
-    var topic = req.params.topic;    
+    var topic = req.params.topic;
     topic = topic.replace(/\|/g, "/");
     if (checker.userTopicPermission(req.username, topic)) {
       var topicParts = topic.split("/");
@@ -153,7 +151,6 @@ function setupApi(that) {
       res.end();
     }
   });
-
   /**
    * API function 2
    */
@@ -187,7 +184,6 @@ function setupApi(that) {
       res.end();
     }
   });
-
   /**
    * API function 3
    */
