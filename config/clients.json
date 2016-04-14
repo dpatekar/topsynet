@@ -10,5 +10,13 @@
   {
     "id": "n03",
     "allowedUsers": ["drpatekar", "mamarkic"]    
+  },
+  {
+    "id": "ESP1",
+    "allowedUsers": ["drpatekar"]    
+  },
+  {
+    "id": "ui03",
+    "allowedUsers": ["drpatekar"]    
   } 
 ]
