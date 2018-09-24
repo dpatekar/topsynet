@@ -1,10 +1,10 @@
 {
-  "hostname": "topsy.vernnet.hr",
+  "hostname": "topsy",
   "store": {
     "host": "localhost",
     "database": "topsynet",
     "user": "topsynet_admin",
-    "password": "tT383#00495"
+    "password": "12345"
   },
   "broker": {
     "id": "topsy",
